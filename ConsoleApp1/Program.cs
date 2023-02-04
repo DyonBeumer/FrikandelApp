@@ -31,9 +31,14 @@ using (var context = new FrikandelContext())
     var query = from b in context.Orders
                 select b.Orderer;
 
+    var money = from b in context.Items
+                where b.Name == "Kroket"
+                select b.Price;
+
+    Console.WriteLine($"Alle kroketten voor: {money.Sum()}");
+
     foreach (var person in query)
     {
         Console.WriteLine(person.Name);
     }
-    
 }
