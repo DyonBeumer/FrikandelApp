@@ -29,7 +29,9 @@ using (var dbConn = new SqlConnection("Server=(localdb)\\mssqllocaldb;Database=F
             Price = (new(random.NextDouble() * 100)),
 
         };
-        items.Add(item);
+        dbConn.Execute(
+                    "INSERT INTO Item (Id, Name, Price) VALUES (@Id, @Name, @Price)",
+                    item);
     }
 
 
