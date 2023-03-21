@@ -2,13 +2,17 @@
     "Id": 123,
     "Firstname": "Mitchel",
     "LastName": "Riddle",
-    "YouKnowWhat": [{
-        "Id": 2,
-        "Cheeze": "It",
-        "MusicPlayer": 3 
-    }, {
-        "Id": 1,
-        "Cheeze": "Rotterdamsche Oude",
-        "MusicPlayer": 0
-    }]
+    "YouKnowWhat": [
+        {
+            "Id": 2,
+            "Cheeze": "It",
+            "MusicPlayer": 3
+        },
+        {
+            "Id": 1,
+            "Cheeze": "Rotterdamsche Oude",
+            "MusicPlayer": 0
+        }
+    ],
+    "Statuscode": 418
 }
